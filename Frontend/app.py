@@ -52,7 +52,7 @@ def get_movie_recommendations(user_id):
     # Sort recommended movies by predicted ratings
     sorted_recommended_movies = sorted(recommended_movies, key=lambda x: x[1], reverse=True)
 
-    return sorted_recommended_movies[:10], list(common_genres_counter.keys())[:5]
+    return sorted_recommended_movies[:10], list(common_genres_counter.keys())[:3]
 
 
 @app.route('/')
