@@ -15,6 +15,7 @@
   - [Frontend Application](#frontend-application)
   - [Analysis](#analysis)
   - [Packages utilised](#packages-utilised)
+  - [Future Updates](#future-updates)
   - [Credits](#credits)
 
 ## Overview
@@ -96,6 +97,11 @@ For a detailed analysis and scores of the model, please refer to the Jupyter not
 3. Pandas
 4. NumPy
 5. Flask
+
+## Future Updates
+1. Selection of real-time genres and provision of movies
+2. Provision of more latest data
+3. Increasing algorithm complexity and efficiencies
 
 ## Credits
 - [Srihari M](https://github.com/sriharimurali01)
