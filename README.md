@@ -2,7 +2,10 @@
 
 ## Overview
 
-This project implements a collaborative filtering recommender system using neural networks. Collaborative filtering is a method to make automatic predictions (filtering) about the preference of a user by collecting preferences from many users (collaborating). In this implementation, we use neural networks to learn latent representations of users and movies, enabling the model to make predictions for unseen user-movie pairs.
+This project implements a collaborative filtering recommender system using neural networks. Collaborative filtering is a method to make automatic predictions about the preference of a user by collecting preferences from many users (collaborating). In this implementation, neural networks are utilized to learn latent representations of users and movies, enabling the model to make predictions for unseen user-movie pairs.
+
+### DataSet
+> The dataset is imported from Kaggle, and can be downloaded from [here](https://www.kaggle.com/datasets/parasharmanas/movie-recommendation-system/download?datasetVersionNumber=1).
 
 ## Concepts Involved
 
@@ -27,28 +30,42 @@ Make sure you have the following dependencies installed:
 - NumPy
 - Scikit-learn
 - TensorFlow
+- Flask
 
 Install dependencies using:
 
 ```bash
-pip install pandas numpy scikit-learn tensorflow
+pip install pandas numpy scikit-learn tensorflow Flask
 ```
 
 ## Usage
-1. Data Preparation: Ensure you have the movie and rating datasets. The movie dataset should contain 'movieId', 'genres', and other relevant columns. The rating dataset should have 'userId', 'movieId', and 'rating' columns.
+1. **Data Preparation:** Ensure you have the movie and rating datasets. The movie dataset should contain 'movieId', 'genres', and other relevant columns. The rating dataset should have 'userId', 'movieId', and 'rating' columns.
 
-2. Run the Code: Execute the Python script to train the collaborative filtering model. [collaborative-filtering.py](collaborative-filtering.py)
+2. **Run the Code:** Execute the Python script to train the collaborative filtering model and launch the Flask-based web frontend.
 
 ```bash
 python collaborative_filtering.py
 ```
 
 ### Results
-The model will be trained, and predictions will be made on the test set. The training progress and evaluation results will be displayed in the console.
-An already trained model is utilised for easier progressing and validation provisioning better results.
+The model will be trained, and predictions will be made on the test set. The training progress and evaluation results will be displayed in the console. Additionally, a Flask-based web frontend has been provided for a more interactive user experience.
+
+To interact with the recommender system, open your web browser and enter the URL displayed in the console.
+
+## Fronted Application
+
+For easy interaction and movie recommendations, you can access the Flask-based web frontend.
+The implementation is provided here: [Frontend](/Frontend/)
+
+You can run the model byt running the following command after downloading the dataset and the above frontend implementation source code
+
+```bash
+python app.py
+```
 
 ### Acknowledgments
 1. TensorFlow
 2. Scikit-learn
 3. Pandas
 4. NumPy
+5. Flask

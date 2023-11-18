@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <style>
+        body {
+            font-family: 'Source Sans 3', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/image.jpeg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ffffff; /* Set your desired text color */
+        }
+        
+        h3 {
+            color: #ffffff;
+        }
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #ffffff
+        }
+
+        footer{
+            color: #ffffff;
+            padding-top: 80px;
+            height: 30px;
+        }
+
+        footer a {
+            color: #FFD700; /* Set your desired color for the hyperlink */
+            text-decoration: none;
+        }
+
+        input, button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Movie Recommendation System</h1>
+    <h3>This is based on a SNN - collaborative system, and the users are numbered from 1 - 74</h3>
+    <form action="/recommendations" method="post">
+        <label for="user_id">Enter User ID (1-74): </label>
+        <input type="number" name="user_id" id="user_id" required min="1" max="74">
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <footer>
+        Created by Srihari M | <a href="https://github.com/SrihariMurali01" target="_blank">@SrihariMurali01</a>
+    </footer>
+
+
+</body>
+</html>
